@@ -1,4 +1,4 @@
-# Smart Masjid Management (SMM)
+# Smart Masjid Management System
 
 A comprehensive mosque management system built with modern web technologies.
 
@@ -7,7 +7,7 @@ A comprehensive mosque management system built with modern web technologies.
 ```
 SMM/
 ├── frontend/          # React frontend application
-│   ├── src/          # Source code
+│   ├── src/          # Source files
 │   └── public/       # Static files
 └── backend/          # Node.js backend server
     ├── routes/       # API routes
