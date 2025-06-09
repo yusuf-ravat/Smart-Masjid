@@ -65,7 +65,7 @@ const MasjidNavbar = () => {
           <nav className="hidden sm:flex items-center gap-6">
             <NavLink label="Manage Users" to="/manageuser" />
             <NavLink label="View Donations" to="/view-donations" />
-            <NavLink label="Send Alerts" to="/send-alerts" />
+            <NavLink label="Events" to="/events" />
             <NavLink label="Prayer Times" to="/prayer-times" />
             <NavLink label="Volunteers" to="/volunteers" />
             <NavLink label="Settings" to="/settings" />
