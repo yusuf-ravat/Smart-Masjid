@@ -10,6 +10,8 @@ import SuperAdminDashboard from "../pages/SuperAdminDashboard";
 import MasjidJoin from "../pages/MasjidJoin";
 import ManageUser from "../pages/ManageUser";
 import ViewDonations from "../pages/ViewDonations";
+import Events from "../pages/Events";
+
 function AppRouter() {
   return (
     <Routes>
@@ -25,7 +27,8 @@ function AppRouter() {
         <Route path="/manageuser" element={<ManageUser />} />
         <Route path="/view-donations" element={<ViewDonations />} />
         <Route path="/masjid" element={<MasjidRegister />} />
-         <Route path="/masjid/dashboard" element={<MasjidsDashboard />} />
+        <Route path="/masjid/dashboard" element={<MasjidsDashboard />} />
+        <Route path="/events" element={<Events />} />
 
         <Route path="/superadmin" element={<SuperAdminLogin />} />
         <Route path="/superadmin/dashboard" element={<SuperAdminDashboard />} />

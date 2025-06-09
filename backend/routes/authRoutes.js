@@ -51,6 +51,17 @@ const
 }= require("../controllers/prayerTimingController");
 ////END Import prayerTimingController////
 
+// Import eventController
+const {
+  createEvent,
+  getMasjidEvents,
+  updateEvent,
+  deleteEvent,
+  joinEvent,
+  leaveEvent,
+} = require("../controllers/eventController");
+////END Import eventController////
+
 //authController
 //user
 router.post("/register", register);
@@ -92,5 +103,13 @@ router.post("/reactToAnnouncement", reactToAnnouncement);
 //prayerTimingController
 router.put("/updatePrayerTimings/:masjidId", updatePrayerTimings);
 router.get("/getPrayerTimings/:masjidId", getPrayerTimings);
+
+//eventController
+router.post("/createEvent", createEvent);
+router.get("/getMasjidEvents/:masjidId", getMasjidEvents);
+router.put("/updateEvent/:id", updateEvent);
+router.delete("/deleteEvent/:id", deleteEvent);
+router.post("/joinEvent/:eventId", joinEvent);
+router.post("/leaveEvent/:eventId", leaveEvent);
 
 module.exports = router;
